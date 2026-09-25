@@ -105,7 +105,7 @@ export default function App() {
     let interval: any = null;
     if (isRenderingFull) {
       interval = setInterval(() => {
-        fetch('/api/render-progress')
+        fetch('https://fotbal-1.onrender.com/api/render-progress')
           .then((r) => r.json())
           .then((data) => {
             if (data && typeof data.percent === 'number') {
