@@ -172,7 +172,7 @@ export default function App() {
     setTestStatus('Executing TEST 1: FFmpeg 5s 9:16 (1080x1920) extraction...');
 
     try {
-      const res = await fetch('/api/test-render-1', {
+      const res = await fetch('https://fotbal-1.onrender.com/api/test-render-1', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
