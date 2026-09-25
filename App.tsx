@@ -132,7 +132,7 @@ export default function App() {
     setIsTestRunning(true);
 
     try {
-      const res = await fetch('/api/upload-video', {
+      const res = await fetch('https://fotbal-1.onrender.com/api/upload-video', {
         method: 'POST',
         body: formData,
       });
