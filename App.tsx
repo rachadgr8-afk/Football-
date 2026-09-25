@@ -300,7 +300,7 @@ export default function App() {
 
       // 3. Gemini QC Review
       try {
-        const qcRes = await fetch('/api/qc-review', {
+        const qcRes = await fetch('https://fotbal-1.onrender.com/api/qc-review', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ editPlan: plan, style: styleToUse }),
