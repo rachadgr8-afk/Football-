@@ -200,7 +200,7 @@ export default function App() {
     setTestStatus('Executing TEST 2: FFmpeg 0.7x speed slow-mo + 10% zoompan...');
 
     try {
-      const res = await fetch('/api/test-render-2', {
+      const res = await fetch('https://fotbal-1.onrender.com/api/test-render-2', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
